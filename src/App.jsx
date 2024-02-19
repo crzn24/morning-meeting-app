@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/pages/Home";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact />
+          <Route path="/" exact Component={Home}/>
           {/* <Route exact path="/" element={<Navbar />} /> */}
         </Routes>
       </Router>
