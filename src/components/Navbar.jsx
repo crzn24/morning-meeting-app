@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Button";
+import BobcatLogo from "../assets/images/cruzBobcatHead.png"
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -19,6 +20,11 @@ const Navbar = () => {
     }
   };
 
+
+  useEffect(() => {
+    showButton()
+  }, [])
+
   window.addEventListener("resize", showButton);
 
   return (
@@ -27,7 +33,13 @@ const Navbar = () => {
         <div className="navbar-container">
           {/* Logo */}
           <div>
-            <Link to="/" className="navbar-logo">
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <img
+                src={BobcatLogo}
+                alt="Bobcat Logo"
+                style={{ width: "40px" }}
+                className="hover:scale-110 duration-500"
+              />
               ILC
             </Link>
           </div>
