@@ -31,6 +31,26 @@ const Cards = () => {
               label="Adventure"
               path="/"
             />
+          </ul>
+          <ul className="cards--items">
+            <CardItem
+              src={img9}
+              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              label="Adventure"
+              path="/"
+            />
+            <CardItem
+              src={img1}
+              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              label="Adventure"
+              path="/"
+            />
+            <CardItem
+              src={img2}
+              text="Travel through the islands..."
+              label="Adventure"
+              path="/"
+            />
             <CardItem
               src={img6}
               text="Explore the hidden waterfall deep inside the Amazon Rainforest"
