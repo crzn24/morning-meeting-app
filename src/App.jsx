@@ -11,7 +11,7 @@ import Weather from "./components/pages/Weather";
 import SelPage from "./components/pages/SelPage";
 import LofiPage from "./components/pages/LofiPage"
 import Sounds from "./components/pages/Sounds"
-import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer.jsx"
 
 
 function App() {
