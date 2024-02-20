@@ -5,6 +5,13 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
+import Classroom from "./components/pages/Classroom";
+import CalendarPage from "./components/pages/CalendarPage";
+import Weather from "./components/pages/Weather";
+import SelPage from "./components/pages/SelPage";
+import LofiPage from "./components/pages/LofiPage"
+import Sounds from "./components/pages/Sounds"
+
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -14,8 +21,13 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact Component={Home}/>
-          {/* <Route exact path="/" element={<Navbar />} /> */}
+          <Route path="/" exact Component={Home} />
+          <Route path="/class" exact Component={Classroom} />
+          <Route path="/calendar" exact Component={CalendarPage} />
+          <Route path="/weather" exact Component={Weather} />
+          <Route path="/sel" exact Component={SelPage} />
+          <Route path="/lofi" exact Component={LofiPage} />
+          <Route path="/sounds" exact Component={Sounds} />
         </Routes>
       </Router>
     </>
