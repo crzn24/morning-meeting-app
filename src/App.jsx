@@ -11,6 +11,7 @@ import Weather from "./components/pages/Weather";
 import SelPage from "./components/pages/SelPage";
 import LofiPage from "./components/pages/LofiPage"
 import Sounds from "./components/pages/Sounds"
+import Footer from "./components/Footer.jsx";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/lofi" exact Component={LofiPage} />
           <Route path="/sounds" exact Component={Sounds} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
