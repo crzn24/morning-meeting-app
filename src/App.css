@@ -6,11 +6,11 @@
 }
 
 .home,
-.class,
+.classroom,
 .calendar,
 .weather,
-.sel, 
-.lofi,
+.selpage, 
+.lofipage,
 .sounds {
   display: flex;
   height: 90vh;
@@ -19,8 +19,8 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.weather {
+  background-image: url('./assets/images/img-2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,8 +28,8 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/images/img-1.jpg');
+.lofipage {
+  background-image: url('./assets/images/img-1.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -37,8 +37,8 @@
   font-size: 100px;
 }
 
-.sign-up {
-  background-image: url('/images/img-8.jpg');
+.sounds {
+  background-image: url('./assets/images/img-9.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
