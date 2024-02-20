@@ -1,3 +1,4 @@
+/* comment out when using image and video element in herosection component */
 video {
   object-fit: cover;
   width: 100%;
@@ -5,9 +6,9 @@ video {
   position: fixed;
   z-index: -1;
 }
-
+/* comment out background for video or change image source */
 .hero-container {
-  /* background: url("../assets/images/img-1.jpg") center center/cover no-repeat; */
+  background: url("../assets/images/img-home.jpg") center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
