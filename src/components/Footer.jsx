@@ -2,13 +2,14 @@ import React from "react";
 import "./Footer.css";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import bobcathead from '../assets/images/cruzBobcatHead-small.png'
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the newsletter to find out what we're up to
+          Join our newsletter to find out what we're up to!
         </p>
         <p className="footer-subscription text">
           You can unsubscribe at any time.
@@ -65,8 +66,11 @@ const Footer = () => {
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
+            {/* <Link to="/" className="social-logo">
               ILC <i className="fab fa-typo3"></i>
+            </Link> */}
+            <Link to="/" className="social-logo">
+            <img src={bobcathead} alt="" /> ILC 
             </Link>
           </div>
           <small className="website-rights">N Cruz © 2024</small>
