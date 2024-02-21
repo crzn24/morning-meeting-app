@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Button";
 import BobcatLogo from "../assets/images/cruzBobcatHead.png"
-
+import ilclogo from '../assets/images/bheilc.png'
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -37,12 +37,23 @@ const Navbar = () => {
               <img
                 src={BobcatLogo}
                 alt="Bobcat Logo"
-                style={{ width: "40px" }}
+                style={{ width: "50px" }}
+              />
+              <img src={ilclogo} alt="logo" style={{ width: "150px" }} />
+            </Link>
+          </div>
+          {/* Logo */}
+          {/* <div>
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <img
+                src={BobcatLogo}
+                alt="Bobcat Logo"
+                style={{ width: "50px" }}
                 className="hover:scale-110 duration-500"
               />
               ILC
             </Link>
-          </div>
+          </div> */}
 
           {/* Nav Menu  */}
           <div>
