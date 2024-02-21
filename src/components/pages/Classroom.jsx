@@ -19,6 +19,7 @@ import pl from "../../assets/images/class/pl.jpg";
 import placeholder from "../../assets/images/class/placeholder.jpeg";
 import sb from "../../assets/images/class/sb.jpg";
 import tw from "../../assets/images/class/tw.jpeg";
+import groguhi from "../../assets/images/groguhi.gif"
 
 const Classroom = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -166,7 +167,8 @@ const Classroom = () => {
           onCancel={handleButtonClick}
           onClose={handleButtonClick}
         >
-          <h1>Good Morning!</h1>
+          <h1 className="modal-text-main">Good Morning!</h1>
+          <img src={groguhi} alt="Grogu waving" className="modal-gif"/>
         </Modal>
       )}
     </div>
