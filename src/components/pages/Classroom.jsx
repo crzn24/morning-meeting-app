@@ -28,12 +28,12 @@ const Classroom = () => {
 
   return (
     <div className="classroom-cards">
-      <button
+      {/* <button
         className="modal-btn modal-btn-open"
         onClick={() => setModalOpen(true)}
       >
         Open
-      </button>
+      </button> */}
       <h1>Our Class!</h1>
       <div className="classroom-cards--container">
         <div className="classroom-cards--wrapper">
@@ -43,31 +43,36 @@ const Classroom = () => {
               src={ez}
               text="Elvira"
               label="Student"
-              path={"/class"}
+              path=""
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={kd}
               text="Kayden"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={jo}
               text="Jeremiah"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={ja}
               text="Jumanah"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={ai}
               text="Abbas"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
           </ul>
           <ul className="cards--items">
@@ -76,30 +81,35 @@ const Classroom = () => {
               text="JB"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={dd}
               text="Donnie"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={ls}
               text="Logan"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={tw}
               text="Titus"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={an}
               text="Anthony"
               label="Student"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
           </ul>
           {/* Teachers  */}
@@ -109,36 +119,42 @@ const Classroom = () => {
               text="Mr. Patrick"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={placeholder}
               text="Nicky"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={nc}
               text="Mr. Cruz"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={sb}
               text="Mrs. Bernert"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={lw}
               text="Ms. Washington"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
               src={placeholder}
               text="Ms. Le"
               label="Teacher"
               path="/class"
+              onClick={() => setModalOpen(true)}
             />
           </ul>
         </div>
