@@ -9,10 +9,10 @@ import Classroom from "./components/pages/Classroom";
 import CalendarPage from "./components/pages/CalendarPage";
 import Weather from "./components/pages/Weather";
 import SelPage from "./components/pages/SelPage";
-import LofiPage from "./components/pages/LofiPage"
-import Sounds from "./components/pages/Sounds"
-import Footer from "./components/Footer.jsx"
-
+import LofiPage from "./components/pages/LofiPage";
+import Sounds from "./components/pages/Sounds";
+import Footer from "./components/Footer.jsx";
+import Morning from "./components/pages/Morning.jsx";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -29,6 +29,7 @@ function App() {
           <Route path="/sel" exact Component={SelPage} />
           <Route path="/lofi" exact Component={LofiPage} />
           <Route path="/sounds" exact Component={Sounds} />
+          <Route path="/morning" exact Component={Morning} />
         </Routes>
         <Footer />
       </Router>
