@@ -6,7 +6,13 @@ import "./CalendarPage.css";
 const CalendarPage = () => {
   const [value, onChange] = useState(new Date());
   const [date, setDate] = useState(new Date());
-  
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+
   return (
     <div className="calendarpage">
       <div className="calendarpage-container">
@@ -22,7 +28,7 @@ const CalendarPage = () => {
         </div>
         <div className="calendarpage-fulldate-wrapper">
           <p className="calendarpage-fulldate">
-            <span>Today is</span> {date.toDateString()}
+            <span>Today is</span> {date.toLocaleDateString(undefined, options)}
           </p>
         </div>
       </div>
