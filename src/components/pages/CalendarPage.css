@@ -15,10 +15,26 @@
 }
 
 .calendarpage-title {
+  margin-bottom: 20px;
 }
 
 .calendarpage-body {
+  padding: 10px;
+  margin-bottom: 20px;
 }
+
+.calendarpage-fulldate-wrapper {
+  display: flex;
+}
+
+.calendarpage-fulldate {
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+
 
 /* REACT CALENDAR STYLING  */
 
@@ -38,6 +54,7 @@ abbr[title] {
   /* border: 1px solid #a0a096; */
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.125em;
+  padding: 15px;
 }
 
 .react-calendar--doubleView {
@@ -83,7 +100,8 @@ abbr[title] {
 .react-calendar__navigation button {
   min-width: 44px;
   background: none;
-  color: #6f48eb;
+  /* color: #6f48eb; */
+  color: black;
   font-size: 20px;
   margin-top: 8px;
 }
@@ -202,33 +220,36 @@ abbr[title] {
 /* MY STYLE */
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-    background: #6f48eb;
-    color: white;
+  background: #6f48eb;
+  color: white;
 }
 
 /* MY STYLE */
 .react-calendar--selectRange .react-calendar__tile--hover {
-    background-color: #f8f8fa;}
+  background-color: #f8f8fa;
+}
 
 /* MY OTHER STYLES FOR RANGE  */
 .react-calendar__tile--range {
-    background: #f8f8fa;
-    color: #6f48eb;
-    border-radius: 0;
-   }
-   .react-calendar__tile--rangeStart {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    background: #6f48eb;
-    color: white;
-   }
-   .react-calendar__tile--rangeEnd {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background: #6f48eb;
-    color: white;
-   }
+  background: #f8f8fa;
+  color: #6f48eb;
+  border-radius: 0;
+}
+.react-calendar__tile--rangeStart {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #6f48eb;
+  color: white;
+}
+.react-calendar__tile--rangeEnd {
+  /* border-top-left-radius: 0; */
+  /* border-bottom-left-radius: 0; */
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #6f48eb;
+  color: white;
+}

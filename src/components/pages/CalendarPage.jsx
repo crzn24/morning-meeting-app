@@ -7,10 +7,10 @@ const CalendarPage = () => {
   const [value, onChange] = useState(new Date());
   const [date, setDate] = useState(new Date());
   const options = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   };
 
   return (
@@ -23,7 +23,12 @@ const CalendarPage = () => {
             value={value}
             showNeighboringMonth={false}
             calendarType="gregory"
+            // calendarType="US"
             selectRange={true}
+            minDetail="month"
+            // showNavigation={}
+            prev2Label={null}
+            next2Label={null}
           />
         </div>
         <div className="calendarpage-fulldate-wrapper">
