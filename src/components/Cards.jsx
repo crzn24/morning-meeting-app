@@ -15,19 +15,19 @@ const Cards = () => {
           <ul className="cards--items">
             <CardItem
               src={img9}
-              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              text="Hi"
               label="Adventure"
               path="/"
             />
             <CardItem
               src={img1}
-              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              text="This"
               label="Adventure"
               path="/"
             />
             <CardItem
               src={img2}
-              text="Travel through the islands..."
+              text="Is"
               label="Adventure"
               path="/"
             />
@@ -35,25 +35,25 @@ const Cards = () => {
           <ul className="cards--items">
             <CardItem
               src={img9}
-              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              text="A"
               label="Adventure"
               path="/"
             />
             <CardItem
               src={img1}
-              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              text="Test"
               label="Adventure"
               path="/"
             />
             <CardItem
               src={img2}
-              text="Travel through the islands..."
+              text="To"
               label="Adventure"
               path="/"
             />
             <CardItem
               src={img6}
-              text="Explore the hidden waterfall deep inside the Amazon Rainforest"
+              text="See"
               label="Teacher"
               path="/"
             />
