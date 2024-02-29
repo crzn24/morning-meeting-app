@@ -33,7 +33,7 @@ const CalendarPage = () => {
         </div>
         <div className="calendarpage-fulldate-wrapper">
           <p className="calendarpage-fulldate">
-            <span>Today is</span> {date.toLocaleDateString(undefined, options)}
+            <span>Today is</span> <span className="full-date-span">{date.toLocaleDateString(undefined, options)}</span>
           </p>
         </div>
       </div>

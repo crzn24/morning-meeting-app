@@ -34,7 +34,9 @@
   font-size: 1.5rem;
 }
 
-
+.full-date-span {
+  text-decoration: underline;
+}
 
 /* REACT CALENDAR STYLING  */
 
