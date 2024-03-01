@@ -8,7 +8,7 @@
 .home,
 .classroom,
 .calendar,
-.weather,
+/* .weather, */
 .selpage, 
 .lofipage,
 .sounds {
@@ -19,14 +19,14 @@
   font-size: 3rem;
 }
 
-.weather {
+/* .weather {
   background-image: url('./assets/images/img-2.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 .lofipage {
   background-image: url('./assets/images/img-1.jpg');
