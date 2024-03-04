@@ -11,6 +11,32 @@ import wind_icon from "../../assets/images/weather-icons/wind.png";
 import humidity_icon from "../../assets/images/weather-icons/humidity.png";
 
 const Weather = () => {
+  let api_key = "69a915e9ee14831c618b7397cb2fafc5";
+
+  const search = async () => {
+    const element = document.getElementsByClassName("city-input");
+    if (element[0].value === "") {
+      return 0;
+    }
+    // need to use template literals to insert value in string
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=imperial&appid=${api_key}`;
+
+    let response = await fetch(url);
+    let data = await response.json();
+
+    const humidity = document.getElementsByClassName("humidity-percent");
+    const wind = document.getElementsByClassName("wind-rate");
+    const temperature = document.getElementsByClassName("weather-temp");
+    const location = document.getElementsByClassName("weather-location");
+
+    humidity[0].innerHTML = data.main.humidity + " %";
+    wind[0].innerHTML = data.wind.speed + " mph";
+    temperature[0].innerHTML = data.main.temp + " °C";
+    location[0].innerHTML = data.name;
+  };
+
+  // ^^^ in the url we will get element.value and use our api key to fetch data. with the url variable, we are fetching the data and storing it in the response variable. after getting the data in the response variable, we pass the data into json
+
   // const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 
   // const { data, isLoading, errorMessage } = useOpenWeather({
@@ -45,7 +71,12 @@ const Weather = () => {
       <div className="weather-container">
         <div className="weather-top-bar">
           <input type="text" className="city-input" placeholder="Search" />
-          <div className="search-icon">
+          <div
+            className="search-icon"
+            onClick={() => {
+              search();
+            }}
+          >
             <img src={search_icon} alt="" />
           </div>
         </div>
@@ -65,7 +96,7 @@ const Weather = () => {
           <div className="weather-element">
             <img src={wind_icon} alt="" className="weather-icon" />
             <div className="weather-data">
-              <div className="humidity-percent">17 mph</div>
+              <div className="wind-rate">17 mph</div>
               <div className="weather-text">Wind Speed</div>
             </div>
           </div>
