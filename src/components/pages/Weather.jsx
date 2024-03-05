@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import search_icon from "../../assets/images/weather-icons/search.png";
-import clear_icon from "../../assets/images/weather-icons/clear.png";
-import cloud_icon from "../../assets/images/weather-icons/cloud.png";
-import drizzle_icon from "../../assets/images/weather-icons/drizzle.png";
-import rain_icon from "../../assets/images/weather-icons/rain.png";
-import snow_icon from "../../assets/images/weather-icons/snow.png";
+// import clear_icon from "../../assets/images/weather-icons/clear.png";
+// import cloud_icon from "../../assets/images/weather-icons/cloud.png";
+// import drizzle_icon from "../../assets/images/weather-icons/drizzle.png";
+// import rain_icon from "../../assets/images/weather-icons/rain.png";
+// import snow_icon from "../../assets/images/weather-icons/snow.png";
 import wind_icon from "../../assets/images/weather-icons/wind.png";
 import humidity_icon from "../../assets/images/weather-icons/humidity.png";
 
@@ -104,8 +104,8 @@ const Weather = () => {
           </div>
         </div>
         <div className="weather-image">
-          {/* <img src={wicon} alt="" /> */}
-          {wicon && <img src={wicon} alt="Weather Icon" />}
+          {/* {wicon && <img src={wicon} alt="Weather Icon" className="wicon"/>} */}
+          <img src={wicon} alt="Weather Icon" className="wicon"/>
         </div>
         <div className="weather-temp">24°C</div>
         <div className="weather-location">Los Angeles, CA</div>
