@@ -15,6 +15,8 @@ import kd from "../../assets/images/class/kd.jpeg";
 import ls from "../../assets/images/class/ls.jpeg";
 import lw from "../../assets/images/class/lw.jpg";
 import nc from "../../assets/images/class/nc.jpg";
+import nb from "../../assets/images/class/nb.png";
+import nl from "../../assets/images/class/nl.png";
 import pl from "../../assets/images/class/pl.jpg";
 import placeholder from "../../assets/images/class/placeholder.jpeg";
 import sb from "../../assets/images/class/sb.jpg";
@@ -123,7 +125,7 @@ const Classroom = () => {
               onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
-              src={placeholder}
+              src={nb}
               text="Nicky"
               label="Teacher"
               path="/class"
@@ -151,7 +153,7 @@ const Classroom = () => {
               onClick={() => setModalOpen(true)}
             />
             <ClassroomCardItem
-              src={placeholder}
+              src={nl}
               text="Ms. Le"
               label="Teacher"
               path="/class"
