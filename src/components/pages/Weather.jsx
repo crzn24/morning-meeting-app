@@ -1,5 +1,4 @@
-import React from "react";
-// import ReactWeather, { useOpenWeather } from "react-open-weather";
+import React, { useState } from "react";
 import "./Weather.css";
 import search_icon from "../../assets/images/weather-icons/search.png";
 import clear_icon from "../../assets/images/weather-icons/clear.png";
@@ -12,6 +11,9 @@ import humidity_icon from "../../assets/images/weather-icons/humidity.png";
 
 const Weather = () => {
   let api_key = "69a915e9ee14831c618b7397cb2fafc5";
+
+  // const [wicon, setWicon] = useState(cloud_icon);
+  const [wicon, setWicon] = useState("");
 
   const search = async () => {
     const element = document.getElementsByClassName("city-input");
@@ -30,42 +32,63 @@ const Weather = () => {
     const location = document.getElementsByClassName("weather-location");
 
     humidity[0].innerHTML = data.main.humidity + " %";
-    wind[0].innerHTML = data.wind.speed + " mph";
-    temperature[0].innerHTML = data.main.temp + " °C";
+    wind[0].innerHTML = Math.round(data.wind.speed) + " mph";
+    temperature[0].innerHTML = Math.round(data.main.temp) + " °C";
     location[0].innerHTML = data.name;
+
+
+    // Update weather icon
+    setWicon(`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    // if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
+    //   setWicon(clear_icon);
+    // } else if (
+    //   data.weather[0].icon === "02d" ||
+    //   data.weather[0].icon === "02n"
+    // ) {
+    //   setWicon(cloud_icon);
+    // } else if (
+    //   data.weather[0].icon === "03d" ||
+    //   data.weather[0].icon === "03n"
+    // ) {
+    //   setWicon(cloud_icon);
+    // } else if (
+    //   data.weather[0].icon === "04d" ||
+    //   data.weather[0].icon === "04n"
+    // ) {
+    //   setWicon(cloud_icon);
+    // } else if (
+    //   data.weather[0].icon === "09d" ||
+    //   data.weather[0].icon === "09n"
+    // ) {
+    //   setWicon(rain_icon);
+    // } else if (
+    //   data.weather[0].icon === "10d" ||
+    //   data.weather[0].icon === "10n"
+    // ) {
+    //   setWicon(rain_icon);
+    // } else if (
+    //   data.weather[0].icon === "11d" ||
+    //   data.weather[0].icon === "11n"
+    // ) {
+    //   setWicon(rain_icon);
+    // } else if (
+    //   data.weather[0].icon === "13d" ||
+    //   data.weather[0].icon === "13n"
+    // ) {
+    //   setWicon(snow_icon);
+    // } else if (
+    //   data.weather[0].icon === "50d" ||
+    //   data.weather[0].icon === "50n"
+    // ) {
+    //   setWicon(snow_icon);
+    // } else {
+    //   setWicon(clear_icon);
+    // }
+    console.log(data.weather[0].icon);
   };
 
   // ^^^ in the url we will get element.value and use our api key to fetch data. with the url variable, we are fetching the data and storing it in the response variable. after getting the data in the response variable, we pass the data into json
 
-  // const apiKey = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
-
-  // const { data, isLoading, errorMessage } = useOpenWeather({
-  //   key: "69a915e9ee14831c618b7397cb2fafc5",
-  //   // key: {apiKey},
-  //   lat: "47.445011",
-  //   lon: "-122.146500",
-  //   // location: "seattle,usa",
-  //   lang: "en",
-  //   unit: "imperial", // values are (metric, standard, imperial)
-  // });
-
-  // return (
-  //   <div className="weather-page">
-  //     <h1 className="weather-title">WEATHER</h1>
-  //     <div className="weather-container">
-  //       <ReactWeather
-  //       isLoading={isLoading}
-  //       errorMessage={errorMessage}
-  //       data={data}
-  //       lang="en"
-  //       locationLabel="Renton"
-  //       unitsLabels={{ temperature: "F", windSpeed: "mph" }}
-  //       showForecast
-  //     />
-  //     </div>
-
-  //   </div>
-  // );
   return (
     <div className="weather">
       <div className="weather-container">
@@ -81,7 +104,8 @@ const Weather = () => {
           </div>
         </div>
         <div className="weather-image">
-          <img src={cloud_icon} alt="" />
+          {/* <img src={wicon} alt="" /> */}
+          {wicon && <img src={wicon} alt="Weather Icon" />}
         </div>
         <div className="weather-temp">24°C</div>
         <div className="weather-location">Los Angeles, CA</div>
