@@ -104,8 +104,8 @@ const Weather = () => {
           </div>
         </div>
         <div className="weather-image">
-          {/* {wicon && <img src={wicon} alt="Weather Icon" className="wicon"/>} */}
-          <img src={wicon} alt="Weather Icon" className="wicon"/>
+          {wicon && <img src={wicon} alt="Weather Icon" className="wicon"/>}
+          {/* <img src={wicon} alt="Weather Icon" className="wicon"/> */}
         </div>
         <div className="weather-temp">24°C</div>
         <div className="weather-location">Los Angeles, CA</div>
