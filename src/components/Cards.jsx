@@ -9,53 +9,53 @@ import img9 from "../assets/images/img-9.jpg";
 const Cards = () => {
   return (
     <div className="cards">
-      <h1>This is our class!</h1>
+      <h1>Welcome to our class!</h1>
       <div className="cards--container">
         <div className="cards--wrapper">
           <ul className="cards--items">
             <CardItem
               src={img9}
-              text="Hi"
-              label="Adventure"
-              path="/"
+              text="Who's here today?"
+              label="Our Class"
+              path="/class"
             />
             <CardItem
               src={img1}
-              text="This"
-              label="Adventure"
-              path="/"
+              text="What day is it?"
+              label="Calendar and Days of the Week"
+              path="/calendar"
             />
             <CardItem
               src={img2}
-              text="Is"
-              label="Adventure"
-              path="/"
+              text="What is today's weather?"
+              label="Weather"
+              path="/weather"
             />
           </ul>
           <ul className="cards--items">
             <CardItem
               src={img9}
-              text="A"
-              label="Adventure"
-              path="/"
+              text="How are you feeling?"
+              label="Social Emotional Learning"
+              path="/sel"
             />
             <CardItem
               src={img1}
-              text="Test"
-              label="Adventure"
-              path="/"
+              text="Let's pick some music!"
+              label="Lofi Playlist"
+              path="/lofi"
             />
             <CardItem
               src={img2}
-              text="To"
-              label="Adventure"
-              path="/"
+              text="We need sounds!"
+              label="Soundboard"
+              path="/sounds"
             />
             <CardItem
               src={img6}
-              text="See"
-              label="Teacher"
-              path="/"
+              text="Good morning!"
+              label="Morning Video"
+              path="/morning"
             />
           </ul>
         </div>
