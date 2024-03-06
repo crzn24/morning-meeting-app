@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Calendar from "react-calendar";
 // import "react-calendar/dist/Calendar.css";
 import "./CalendarPage.css";
+import ReactPlayer from "react-player";
 
 const CalendarPage = () => {
   const [value, onChange] = useState(new Date());
@@ -33,8 +34,29 @@ const CalendarPage = () => {
         </div>
         <div className="calendarpage-fulldate-wrapper">
           <p className="calendarpage-fulldate">
-            <span>Today is</span> <span className="full-date-span">{date.toLocaleDateString(undefined, options)}</span>
+            <span>Today is</span>{" "}
+            <span className="full-date-span">
+              {date.toLocaleDateString(undefined, options)}
+            </span>
           </p>
+        </div>
+        <div className="calendar-daysofweek-container">
+          <div className="cal-daysofweek-container">
+            <div className="cal-sun">Sunday</div>
+            <div className="cal-mon">Monday</div>
+            <div className="cal-tues">Tuesday</div>
+            <div className="cal-wed">Wednesday</div>
+            <div className="cal-thurs">Thursday</div>
+            <div className="cal-fri">Friday</div>
+            <div className="cal-sat">Saturday</div>
+          </div>
+        </div>
+        <div className="cal-react-player-wrapper">
+          <ReactPlayer
+            className="cal-react-player"
+            url="https://www.youtube.com/watch?v=oKqAblcwFOA"
+            controls
+          />
         </div>
       </div>
     </div>

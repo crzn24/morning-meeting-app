@@ -255,3 +255,12 @@ abbr[title] {
   background: #6f48eb;
   color: white;
 }
+
+/* DAYS OF THE WEEK  */
+.cal-daysofweek-container {
+display: flex;
+}
+
+.cal-react-player-wrapper {
+  padding-bottom: 20px;
+}
