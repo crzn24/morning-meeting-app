@@ -1,8 +1,11 @@
-import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import Classroom from "./components/pages/Classroom";
@@ -13,13 +16,19 @@ import LofiPage from "./components/pages/LofiPage";
 import Sounds from "./components/pages/Sounds";
 import Footer from "./components/Footer.jsx";
 import Morning from "./components/pages/Morning.jsx";
+import ScrollToTop from "./components/helpers/ScrollToTop.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
 
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" exact Component={Home} />
