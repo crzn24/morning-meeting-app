@@ -42,13 +42,13 @@ const CalendarPage = () => {
         </div>
         <div className="calendar-daysofweek-container">
           <div className="cal-daysofweek-container">
-            <div className="cal-sun">Sunday</div>
-            <div className="cal-mon">Monday</div>
-            <div className="cal-tues">Tuesday</div>
-            <div className="cal-wed">Wednesday</div>
-            <div className="cal-thurs">Thursday</div>
-            <div className="cal-fri">Friday</div>
-            <div className="cal-sat">Saturday</div>
+            <div className="cal-day cal-sun">Sunday</div>
+            <div className="cal-day cal-mon">Monday</div>
+            <div className="cal-day cal-tues">Tuesday</div>
+            <div className="cal-day cal-wed">Wednesday</div>
+            <div className="cal-day cal-thurs">Thursday</div>
+            <div className="cal-day cal-fri">Friday</div>
+            <div className="cal-day cal-sat">Saturday</div>
           </div>
         </div>
         <div className="cal-react-player-wrapper">
