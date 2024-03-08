@@ -35,8 +35,18 @@ const CalendarPage = () => {
         <div className="calendarpage-fulldate-wrapper">
           <p className="calendarpage-fulldate">
             <span>Today is</span>{" "}
-            <span className="full-date-span">
+            {/* <span className="full-date-span">
               {date.toLocaleDateString(undefined, options)}
+            </span> */}
+            <span className="weekday-span">
+              {date.toLocaleDateString(undefined, { weekday: "long" }) + ", "}
+            </span>
+            <span className="full-date-span">
+              {date.toLocaleDateString(undefined, {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
             </span>
           </p>
         </div>

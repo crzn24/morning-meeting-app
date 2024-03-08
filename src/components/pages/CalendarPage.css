@@ -25,17 +25,38 @@
 
 .calendarpage-fulldate-wrapper {
   display: flex;
-}
-
-.calendarpage-fulldate {
-  align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
   margin-bottom: 50px;
 }
 
+.calendarpage-fulldate {
+  font-size: 1.5rem;
+}
+
+.calendarpage-fulldate > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
 .full-date-span {
-  text-decoration: underline;
+  text-decoration: underline #7b1fa2;
+}
+
+.weekday-span {
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 /* REACT CALENDAR STYLING  */
@@ -180,7 +201,7 @@ abbr[title] {
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   background: #f8f8fa;
-  color: #6f48eb;
+  color: #7b1fa2;
   border-radius: 6px;
 }
 
@@ -189,7 +210,7 @@ abbr[title] {
   background: #6f48eb33;
   border-radius: 6px;
   font-weight: bold;
-  color: #6f48eb;
+  color: #7b1fa2;
 }
 
 /* MY STYLE */
@@ -198,7 +219,7 @@ abbr[title] {
   background: #6f48eb33;
   border-radius: 6px;
   font-weight: bold;
-  color: #6f48eb;
+  color: #7b1fa2;
 }
 
 .react-calendar__tile--hasActive {
@@ -212,7 +233,7 @@ abbr[title] {
 }
 /* MY STYLE */
 .react-calendar__tile--active {
-  background: #6f48eb;
+  background: #7b1fa2;
   border-radius: 6px;
   font-weight: bold;
   color: white;
@@ -221,7 +242,7 @@ abbr[title] {
 /* MY STYLE */
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-  background: #6f48eb;
+  background: #7b1fa2;
   color: white;
 }
 
@@ -233,7 +254,7 @@ abbr[title] {
 /* MY OTHER STYLES FOR RANGE  */
 .react-calendar__tile--range {
   background: #f8f8fa;
-  color: #6f48eb;
+  color: #7b1fa2;
   border-radius: 0;
 }
 .react-calendar__tile--rangeStart {
@@ -241,7 +262,7 @@ abbr[title] {
   border-bottom-right-radius: 0;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  background: #6f48eb;
+  background: #7b1fa2;
   color: white;
 }
 .react-calendar__tile--rangeEnd {
@@ -251,7 +272,7 @@ abbr[title] {
   border-bottom-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  background: #6f48eb;
+  background: #7b1fa2;
   color: white;
 }
 
@@ -296,15 +317,15 @@ abbr[title] {
 }
 
 .cal-thurs {
-background-color: #1976d2;
+  background-color: #1976d2;
 }
 
 .cal-fri {
-background-color: #3949ab;
+  background-color: #3949ab;
 }
 
 .cal-sat {
-background-color: #7b1fa2;
+  background-color: #7b1fa2;
 }
 
 .cal-react-player {
