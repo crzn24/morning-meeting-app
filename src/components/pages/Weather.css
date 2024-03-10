@@ -73,6 +73,7 @@
 .weather-data-container {
   display: flex;
   margin-top: 50px;
+  margin-bottom: 50px;
   color: white;
   justify-content: center;
 }
