@@ -1,6 +1,7 @@
 .weather {
   display: flex;
-  height: 90vh;
+  flex-direction: column;
+  /* height: 90vh; */
   height: auto;
   align-items: center;
   justify-content: center;
@@ -11,16 +12,21 @@
   max-width: 600px;
   margin: auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 12px;
   background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .weather-top-bar {
+  flex: 1; /* Make input fill available space */
+  height: 48px; /* Use fixed height or other relative units */
   display: flex;
   justify-content: center;
-  gap: 14px;
-  padding-top: 60px;
+  gap: 2%; /* Use percentage for responsive gap */
+  padding-top: 3%; /* Use percentage for responsive padding */
 }
 
 .weather-top-bar input {
@@ -72,8 +78,8 @@
 
 .weather-data-container {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5%; /* Use percentage for responsive margin */
+  margin-bottom: 5%;
   color: white;
   justify-content: center;
 }
@@ -104,4 +110,29 @@
     /* font-size: 40px; */
     width: 200px;
     height: 200px;
+}
+
+
+
+.weather-statements{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto; /* Center the div horizontally */
+  text-align: center; /* Center the text */
+  max-width: 90%; /* Limit the maximum width */
+  margin-top: 5px; /* Use percentage for responsive margin */
+  margin-bottom: 5%;
+
+}
+
+
+
+.weather-outside, .weather-feels {
+  color: black;
+  font-size: 3vw; /* Use vw (viewport width) for responsive font size */
+  font-weight: 400;
+  margin-top: 2vw; /* Use vw for responsive margin values */
 }
