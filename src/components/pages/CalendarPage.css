@@ -336,3 +336,39 @@ abbr[title] {
 .cal-react-player-wrapper {
   margin-bottom: 30px;
 }
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 960px) {
+  .calendarpage-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .cal-daysofweek-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .cal-day {
+    flex: 0 0 33.33%; /* Make each day take up 33.33% width */
+    margin: 5px;
+  }
+
+  .calendarpage-fulldate {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .calendarpage-fulldate-wrapper {
+    margin-bottom: 20px; /* Reduce margin */
+  }
+
+  .cal-react-player {
+    max-width: 100%; /* Make video player responsive */
+  }
+
+  .cal-react-player-wrapper {
+    margin-bottom: 20px; /* Reduce margin */
+  }
+}
