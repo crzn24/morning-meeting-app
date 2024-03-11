@@ -42,18 +42,6 @@ const Navbar = () => {
               <img src={ilclogo} alt="logo" style={{ width: "150px" }} />
             </Link>
           </div>
-          {/* Logo */}
-          {/* <div>
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img
-                src={BobcatLogo}
-                alt="Bobcat Logo"
-                style={{ width: "50px" }}
-                className="hover:scale-110 duration-500"
-              />
-              ILC
-            </Link>
-          </div> */}
 
           {/* Nav Menu  */}
           <div>
