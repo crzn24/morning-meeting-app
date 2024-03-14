@@ -2,12 +2,13 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
-import video1 from '../assets/videos/video-1.mp4';
+import video1 from "../assets/videos/spaceneedle1.mp4";
+import video2 from "../assets/videos/spaceneedle2.mp4";
 
 const HeroSection = () => {
   return (
     <div className="hero-container">
-      <video src={video1} autoPlay loop muted />
+      <video src={video2} autoPlay loop muted />
       <h1>WELCOME TO ILC</h1>
       <p>Let's start the day!</p>
       {/* <h1>ADVENTURE AWAITS</h1>
