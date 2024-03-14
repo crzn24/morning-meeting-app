@@ -1,39 +1,63 @@
 .sounds {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  
-    background-image: url("../../assets/images/starwars1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-  }
-  
-  .sounds h1 {
-    margin-bottom: 20px; /* Add some space between the heading and buttons */
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  background-image: url("../../assets/images/starwars1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sounds h1 {
+  margin-bottom: 80px;
+  position: relative; /* Position the soundboard absolutely */
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.soundboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.soundboard-button {
+  margin: 10px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #F8F8FF;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.soundboard-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.soundboard-button img {
+  width: 150px;
+  /* width: 100%; */
+  /* height: 150px; */
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sounds {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
   }
 
   .soundboard {
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    max-width: 90%; /* Adjust maximum width for smaller screens */
   }
-  
-  .soundboard-button {
-    margin: 10px;
-    padding: 0;
-    border: none;
-    background: none;
-  }
-  
-  .soundboard-button img {
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-  }
-  
+}
