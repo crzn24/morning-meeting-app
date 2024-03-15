@@ -29,7 +29,7 @@
 
 .weather-top-bar input {
   display: flex;
-  width: 362px;
+  width: 69%;
   height: 78px;
   background-color: #ebfffc;
   border: none;
@@ -62,7 +62,7 @@
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 120px;
+  font-size: 12vw;
   font-weight: 400;
 }
 
@@ -70,14 +70,14 @@
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 60px;
+  font-size: 6vw;
   font-weight: 400;
 }
 
 .weather-data-container {
   display: flex;
-  margin-top: 5%; /* Use percentage for responsive margin */
-  margin-bottom: 5%;
+  margin-top: 3%; /* Use percentage for responsive margin */
+  margin-bottom: 3%;
   color: white;
   justify-content: center;
 }
@@ -90,12 +90,12 @@
 }
 
 .weather-data {
-  font-size: 34px;
+  font-size: 3vw;
   font-weight: 400;
 }
 
 .weather-text {
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 400;
 }
 
@@ -114,12 +114,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
   text-align: center;
   max-width: 90%; /* Limit the maximum width */
-  margin-top: 5px;
-  margin-bottom: 5%;
+  margin: 5px auto 5% auto;
 }
 
 .weather-outside,
@@ -129,4 +126,3 @@
   font-weight: 400;
   margin-top: 2vw; /* Use vw for responsive margin values */
 }
-
