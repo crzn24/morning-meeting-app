@@ -11,7 +11,8 @@ import humidity_icon from "../../assets/images/weather-icons/humidity.png";
 
 const Weather = () => {
   let api_key = "69a915e9ee14831c618b7397cb2fafc5";
-
+  // let api_key = process.env.REACT_APP_API_KEY;
+  // console.log(api_key);
   const [wicon, setWicon] = useState("");
   const [weatherStatements, setWeatherStatements] = useState({
     outside: "Today's weather is...",
