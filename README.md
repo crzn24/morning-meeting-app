@@ -77,6 +77,7 @@ Some of the resources used:
 * [React Router scroll to top](https://www.matthewhoelter.com/2022/04/02/how-to-scroll-to-top-on-route-change-with-react-router-dom-v6.html)
 * [Vite static deploy](https://vitejs.dev/guide/static-deploy.html)
 * [Vite static deploy tutorial](https://github.com/sitek94/vite-deploy-demo?tab=readme-ov-file)
+* [Reusable pop-up modal](https://blog.logrocket.com/creating-reusable-pop-up-modal-react/)
 * [Opening links in new tab](https://www.w3schools.com/tags/att_a_target.asp)
 
 
