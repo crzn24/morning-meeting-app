@@ -1,5 +1,5 @@
-# A Morning Meeting App
-A classroom app built using React
+# Morning Meeting App
+A classroom morning meeting app built using React!
 
 ## Description
 This app was a project built using React. As an educator working in a elementary special education ILC classroom, I wanted an app that contained all of the materials and tools needed to run the start of our class' morning meeting so that everything could run seamlessly and be located in one place. The app is responsive and has some neat interactive elements.
@@ -26,7 +26,7 @@ SO THAT employers can have a better assessment of my technical skills and consid
 
 <!-- If your README is long, add a table of contents to make it easy for users to find what they need. -->
 
-- [A Morning Meeting App](#a-morning-meeting-app)
+- [Morning Meeting App](#morning-meeting-app)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
